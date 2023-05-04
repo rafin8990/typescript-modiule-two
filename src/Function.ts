@@ -74,6 +74,8 @@ const myBestFriend={
 const {fullName}=myBestFriend;
 
 /* 
-Object Destructuring er somoy const {fullName:এইখানে কোন টাইপ যেমন স্ট্রিং , নাম্বার বলে দেওয়া যাবে না । এখানে টাইপ বলে দিলে সেটা টাইপ হিসেবে নেয় না । সেটা  fullName  এর অন্য একটা নাম হিসেবে ব্যবহৃত হবে। }=myBestFriend;
+Object Destructuring er somoy
+
+const {fullName:এইখানে কোন টাইপ যেমন স্ট্রিং , নাম্বার বলে দেওয়া যাবে না । এখানে টাইপ বলে দিলে সেটা টাইপ হিসেবে নেয় না । সেটা  fullName  এর অন্য একটা নাম হিসেবে ব্যবহৃত হবে। }=myBestFriend;
 
 */
