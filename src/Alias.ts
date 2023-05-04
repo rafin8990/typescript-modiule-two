@@ -27,8 +27,21 @@ Type Alias Use Korar Niyom:
 
 */
 
+
+//typeScript Operation Type:
+
+// primary 
 const numberSum=(number1:number, number2:number, operation:(x:number, y:number)=>number)=>{
     return operation(number1,number2);
 }
 
 numberSum(10,20,(x,y)=>x+y);
+
+//Operation type
+type OperationType=(number1:number, number2:number)=>number;
+
+const numSum=(number1:number, number2:number, operation:OperationType)=>{
+    return operation(number1,number2);
+}
+
+numSum(10,20,(x,y)=>x+y);
