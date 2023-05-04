@@ -22,3 +22,8 @@ if(typeof speed === "string"){
 };
 getMyCarSpeed(10)
 getMyCarSpeed("10 kmh-^1")
+
+function throwError(message:string):never{
+    throw new Error(message);
+}
+throwError('error hoise')
