@@ -17,7 +17,8 @@ if(typeof speed === 'number'){
 }
 if(typeof speed === "string"){
     const [value, unit]=speed.split(' ')
-    const convertedSpeed=(parseFloat(value) * 1000)/3600
+    const convertedSpeed=(parseFloat(value) * 1000)/3600;
+    console.log(convertedSpeed);
 }
 };
 getMyCarSpeed(10)
