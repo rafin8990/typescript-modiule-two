@@ -1,7 +1,13 @@
 // tuple generic type
 
 type GenericTuple<x, y> = [x, y];
-type RelationWithSellaryType = { Name: string, Sellary: number }
+// type RelationWithSellaryType = { Name: string, Sellary: number }
+
+// interface 
+interface RelationWithSellaryInterface {
+    Name: string,
+    Sellary: number
+}
 
 const relation: GenericTuple<string, string> = ["Rafin", "Hossain"];
 
@@ -14,7 +20,7 @@ const relationWithSellary: GenericTuple<object, string> = [
 ]
 
 // Another generic type 
-const relationWithSellary2: GenericTuple<RelationWithSellaryType, string> = [
+const relationWithSellary2: GenericTuple<RelationWithSellaryInterface, string> = [
     {
         Name: "Pandey",
         Sellary: 1500000
